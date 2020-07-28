@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Development</title>
+    <style>
+    img {
+        
+        margin-left: auto;
+        margin-right: auto;
+       
+        display: block;
+    }
+    h2 {
+        margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-align: Left;
+    }
+    p1 {
+    text-align: center;
+    font-size: 20px;
+    }
+      </style>
+
+    <!---- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+   <!-- Nav Bars --> 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand d-inline p-2 ml-5 bg-info text-white mb-0 pb-0" href="./index.html">Main Page</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+       
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+				<ul class="nav navbar-nav ml-auto">  
+                     <!-- Drop Downs --> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                          Graph
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./transactiontype.html">Transation Type</a>
+                          <a class="dropdown-item" href="./pie.html">Pie Chart</a>
+                          <a class="dropdown-item" href="./fraudvstype.html">Fraud Vs Type </a>
+                          <a class="dropdown-item" href="./typepiefraud.html">Type Fraud </a>
+                          <a class="dropdown-item" href="./countfraudamount.html">Fraud Counts and $ </a>
+                        </div>
+                      </li>
+	
+       
+        </ul>
+                    
+      </div>
+    </nav>
+
+ <div class="container">
+    <section class="row">
+      <div class="col-lg-9 col-md-12">
+          <div class="plot-content">
+            <h2 class="plot-header">Pie Chart Reperesentation of Fraud Types</h2>
+            <hr>
+            <img width ="400"src="Resources/images/type-pie-fraud.png" alt="Type pie Fraud Graph" style="height:210%; width:150%;">
+             <p>Description goes here.</p>
+          </div>
+        </div>
+      
+
+        </div>
+        
+        </div>
+      </div>
+  </div>  
+
+  </body>
+    
+
+</html>
