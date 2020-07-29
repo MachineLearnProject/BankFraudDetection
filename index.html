@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection using Machine Learning</title>
+​
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style-data.css">
+</head>
+​
+<body>
+​
+​
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+​
+    <nav class="navbar bg-primary">
+      <a class="navbar-brand" href="./index.html">
+        <div class="box">
+          <b>Main Page</b>
+        </div>
+​
+​
+      </a>
+    </nav>
+​
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+           Graph
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="./transactiontype.html">Transation Type</a>
+            <a class="dropdown-item" href="./pie.html">Pie Chart</a>
+            <a class="dropdown-item" href="./fraudvstype.html">Fraud Vs Type </a>
+            <a class="dropdown-item" href="./typepiefraud.html">Type Fraud </a>
+            <a class="dropdown-item" href="./countfraudamount.html">Fraud Amount</a>
+            <a class="dropdown-item" href="./analysis.html">Analysis</a>
+          </div>
+        </li>
+​
+       
+​
+      </ul>
+    </div>
+   
+​
+  </nav>
+  <div class="container-fluid">
+​
+  <div class = "row">
+      <div class="centre">
+        <h2><b>Synthetic Fraud Detection</b></h2>
+        <img src="Resources/images/main page 1.png" alt="Latitude vs. Max Temperature" class="description-image"style="height:50%; width:100%;" >
+        <b>Our Dataset: Synthetic Fraud Detection </b>
+        <p>Why did we choose this dataset? We wanted to target a finance related dataset and we came across this one on Kaggle. There is a lack of public available datasets on financial services and specially in the emerging mobile money transactions domain. Financial datasets are important to many researchers and in particular to us performing research in the domain of fraud detection. Part of the problem is the intrinsically private nature of financial transactions, that leads to no publicly available datasets.</p> 
+        <p>What did we find? We found the fraud proven in the 6 million rows was very slim and that is due to the fact that there is not enough data as it would be too large. We also found that we did not have enough information such as, the country listed, bank institutions, etc. There are trillions of transactions around the world therefore, this was only a quarter of the full data. We found the visualizations we could do were limited due to the information available. </p>
+        <p><b>What methods have we used to analyze this data?</b>
+        <br>1.We used python to clean up the data.</br>2.We also ran the logistic regression and naïve bayes method to see which one works best.</br>3.We tried the SVP method which ran for 30 hours without bringing any results.</br>4.We used Tableau to build some charts and analyze the CSV data.</br>5.We built an HTML page to show the visualizations we worked on.</br> 
+        </p>
+       
+        
+              
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

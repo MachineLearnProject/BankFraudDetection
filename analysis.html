@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection using Machine Learning</title>
+​
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style-data.css">
+</head>
+​
+<body>
+​
+​
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+​
+    <nav class="navbar bg-primary">
+      <a class="navbar-brand" href="./index.html">
+        <div class="box">
+          <b>Main Page</b>
+        </div>
+​
+​
+      </a>
+    </nav>
+​
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+           Graph
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="./transactiontype.html">Transation Type</a>
+            <a class="dropdown-item" href="./pie.html">Pie Chart</a>
+            <a class="dropdown-item" href="./fraudvstype.html">Fraud Vs Type </a>
+            <a class="dropdown-item" href="./typepiefraud.html">Type Fraud </a>
+            <a class="dropdown-item" href="./countfraudamount.html">Fraud Amount </a>
+            <a class="dropdown-item" href="./analysis.html">Analysis</a>
+          </div>
+        </li>
+​
+       
+​
+      </ul>
+    </div>
+   
+​
+  </nav>
+  <div class="container-fluid">
+​
+  <div class = "row">
+      <div class="centre">
+        <h2><b>Data</b></h2>
+        <p>In the Banking Fraud Analysis Project, the goal was to find a model that would reasonably fit the data that we had.  As our group was looking to do a financial-based machine learning project, we found issues getting actual financial transaction data.  To work around this we were able to access a Kaggle dataset (https://www.kaggle.com/ntnu-testimon/paysim1) that was based on actual transactions.  This dataset comprises of in excess of 6 million data points of which just over 8 thousand are fraudulent. </p>
+        <p>Our group found this challenge interesting as we could leverage machine learning see if we could catch fraudlent activities based on signatures of previous fraud.  To tackle this problem we decided to work with the Scikit-Learn library and more specifically the Logistic Regression, Naive-Bayes, SVM and KNN models to see which would best match the data.</p>
+        <hr>
+        <div class="table-responsive-md">
+            <table border="1" class="summaryscore">
+                <thead>
+                  <tr>
+                    <th>Model</th>
+                    <th>Type</th>
+                    <th>Accuracy</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Logistic Regression</th>
+                    <td>Training</td>
+                    <td>80.36%</td>
+                    <td>71.81%</td>
+                    <td>99.98%</td>
+                    <td>83.58%</td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>Testing</td>
+                    <td>80.35%</td>
+                    <td>71.79%</td>
+                    <td>99.97%</td>
+                    <td>83.57%</td>
+                  </tr>
+                  <tr>
+                    <th>Naive-Bayes</th>
+                    <td>Training</td>
+                    <td>77.83%</td>
+                    <td>69.80%</td>
+                    <td>98.07%</td>
+                    <td>81.56%</td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>Testing</td>
+                    <td>77.87%</td>
+                    <td>69.87%</td>
+                    <td>98.06%</td>
+                    <td>81.60%</td>
+                  </tr>
+            </table>
+            <br>
+            <p>Accuracy Score:  TP+TN/TP+FP+FN+TN</p>
+            <p>Precision Score: TP/TP+FP</p>
+            <p>Recall Score: TP/TP+FN</p>
+            <p>F1 Score: F1 Score = 2*(Recall * Precision) / (Recall + Precision)</p>
+​
+        </div>
+    </div>
+</body>
+Collapse
+</html>
+
+
+
+
+
+
+
+
+
+
+
